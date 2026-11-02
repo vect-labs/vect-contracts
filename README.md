@@ -1,10 +1,7 @@
 <p align="center">
-  <img src="assets/vect-v-tile.svg" alt="VECT" width="72" height="72">
-</p>
-<p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/vect-labs-wordmark-white.svg">
-    <img src="assets/vect-labs-wordmark-ink.svg" alt="VECT LABS" height="28">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/vect-lockup-dark.png">
+    <img src="assets/vect-lockup-light.png" alt="Vect.trade | VECT LABS" width="380">
   </picture>
 </p>
 

@@ -5,13 +5,6 @@
   </picture>
 </p>
 
-<p align="center">Smart contracts of Vect.trade, published by VECT LABS.</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT">
-  <img src="https://img.shields.io/badge/solidity-0.8.38-363636" alt="Solidity 0.8.38">
-</p>
-
 ## Contracts
 
 | Contract | Chain | Address | Status |
@@ -29,7 +22,7 @@ Deployed addresses and their verified source (Sourcify) will be listed here at d
 
 ## Build and test
 
-Requires [Foundry](https://book.getfoundry.sh/) and an archive-capable Robinhood Chain RPC for the fork suites.
+The contracts are written in **Solidity 0.8.38** (EVM `cancun`, optimizer 200 runs, via IR). Building requires [Foundry](https://book.getfoundry.sh/); the fork suites also need an archive-capable Robinhood Chain RPC.
 
 ```
 cd exec01

@@ -9,9 +9,9 @@
 
 The source of each contract is the same on every chain; only its deployment configuration differs. Each chain has its own folder under [`deployments/`](deployments/) with that configuration, the deployed address and its verified source.
 
-| Contract | [Robinhood Chain](deployments/robinhood/) | [Base](deployments/base/) | [BNB Smart Chain](deployments/bnb/) | [Arbitrum One](deployments/arbitrum/) | [Ethereum](deployments/ethereum/) |
-|---|---|---|---|---|---|
-| [`VectExecutor`](exec01/) | Release candidate | Not deployed | Not deployed | Not deployed | Not deployed |
+| Contract | Deployed | Not deployed |
+|---|---|---|
+| [`VectExecutor`](exec01/) | — | <a href="deployments/robinhood/"><img src="assets/chains/robinhood.jpg" width="22" height="22" alt="Robinhood Chain" title="Robinhood Chain (release candidate)"></a> <a href="deployments/base/"><img src="assets/chains/base.png" width="22" height="22" alt="Base" title="Base"></a> <a href="deployments/bnb/"><img src="assets/chains/bnb.png" width="22" height="22" alt="BNB Smart Chain" title="BNB Smart Chain"></a> <a href="deployments/arbitrum/"><img src="assets/chains/arbitrum.png" width="22" height="22" alt="Arbitrum One" title="Arbitrum One"></a> <a href="deployments/ethereum/"><img src="assets/chains/ethereum.png" width="22" height="22" alt="Ethereum" title="Ethereum"></a> |
 
 Only the addresses listed in [`deployments/<chain>/`](deployments/) are official VECT LABS contracts.
 
@@ -39,7 +39,7 @@ forge test
 
 The code is provided under the [MIT licence](LICENSE), "as is", without warranty of any kind.
 
-VECT is a trademark of VECT LABS. This licence grants no right to use the VECT name or logo; the logos in `assets/` are not covered by the MIT licence.
+VECT is a trademark of VECT LABS. This licence grants no right to use the VECT name or logo; the logos in `assets/` are not covered by the MIT licence. Chain logos belong to their respective owners and only identify each chain; they imply no affiliation or endorsement.
 
 Using these contracts directly, outside vect.trade, is at your own risk and is not a service of VECT LABS. For vect.trade users, the vect.trade Terms of Use apply.
 

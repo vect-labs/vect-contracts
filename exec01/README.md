@@ -25,7 +25,7 @@ A stateless swap executor for Robinhood Chain (chain ID 4663). It executes, in o
 ## Layout
 - `src/VectExecutor.sol`: the contract.
 - `src/Interfaces.sol`: minimal interfaces declared from public ABIs.
-- `manifest.json`: every constructor immutable for Robinhood Chain (4663).
+- Deployment configuration per chain: [`../deployments/`](../deployments/) (Robinhood Chain: `deployments/robinhood/exec01.json`).
 - `test/`: Foundry suites.
   - `Adversarial.t.sol`: hostile pools, tokens, callbacks, permits and deadlines.
   - `BoundaryF3.t.sol`: exact min-out, fee-base and inflating-token boundaries.

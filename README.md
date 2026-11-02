@@ -7,13 +7,17 @@
 
 ## Contracts
 
-| Contract | Chain | Address | Status |
-|---|---|---|---|
-| [`VectExecutor`](exec01/) | Robinhood Chain (4663) | Not deployed | Release candidate. Internally reviewed, not audited by an external firm. |
+The source of each contract is the same on every chain; only its deployment configuration differs. Each chain has its own folder under [`deployments/`](deployments/) with that configuration, the deployed address and its verified source.
 
-`VectExecutor` is a stateless swap executor. When a user submits a signed swap, it routes the user's tokens across Uniswap v2, v3 and v4 pools and five concentrated-liquidity fork factories in one transaction. It has no owner, no admin, no upgrade and no pause, and it holds no funds between transactions. Details: [`exec01/README.md`](exec01/README.md).
+| Contract | [Robinhood Chain](deployments/robinhood/) | [Base](deployments/base/) | [BNB Smart Chain](deployments/bnb/) | [Arbitrum One](deployments/arbitrum/) | [Ethereum](deployments/ethereum/) |
+|---|---|---|---|---|---|
+| [`VectExecutor`](exec01/) | Release candidate | Not deployed | Not deployed | Not deployed | Not deployed |
 
-Deployed addresses and their verified source (Sourcify) will be listed here at deployment. The source of every contract VECT LABS deploys, or intends to deploy, is published in this repository with its tests.
+Only the addresses listed in [`deployments/<chain>/`](deployments/) are official VECT LABS contracts.
+
+`VectExecutor` is a stateless swap executor. When a user submits a signed swap, it routes the user's tokens across Uniswap v2, v3 and v4 pools and concentrated-liquidity fork factories in one transaction. It has no owner, no admin, no upgrade and no pause, and it holds no funds between transactions. Status everywhere: internally reviewed, not audited by an external firm. Details: [`exec01/README.md`](exec01/README.md).
+
+The source of every contract VECT LABS deploys, or intends to deploy, is published in this repository with its tests.
 
 ## Security
 

@@ -1,0 +1,112 @@
+{
+  "_comment": "EXEC-01 deployment manifest: every constructor immutable of VectExecutor for Robinhood Chain (4663). feeRecipient is the VECT LABS Safe and is filled at deployment.",
+  "chainId": 4663,
+  "measuredAtBlock": 103505000,
+  "build": {
+    "solc": "0.8.38",
+    "evmVersion": "cancun",
+    "optimizer": true,
+    "optimizerRuns": 200,
+    "viaIR": true,
+    "bytecodeHash": "none",
+    "cborMetadata": false
+  },
+  "constants": {
+    "MAX_FEE_BPS": 100,
+    "MAX_LEGS": 3,
+    "MAX_HOPS_PER_LEG": 4,
+    "MAX_PERMIT_WINDOW": 1800
+  },
+  "weth": "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+  "permit2": {
+    "address": "0x000000000022d473030f116ddee9f6b43ac78ba3",
+    "codeHash": "0x5208783f52488f7d3493e5e38311ab707c1d75457fe472a19b0b4d57d66a7fca"
+  },
+  "poolManager": {
+    "address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+    "codeHash": "0xbd3881180b547f5fe817545743cfb4343e96b1bc6640dcd70c106b0066e95626"
+  },
+  "feeRecipient": null,
+  "v3": {
+    "factory": "0x1f7d7550b1b028f7571e69a784071f0205fd2efa",
+    "factoryCodeHash": "0xec72b1abd1f2faee020cfea9c646bd8994f9fb389054f6e574f103a895091739",
+    "initCodeHash": "0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54",
+    "salt": "keccak256(abi.encode(token0, token1, uint24 fee))"
+  },
+  "v2": {
+    "factory": "0x8bceaa40b9acdfaedf85adf4ff01f5ad6517937f",
+    "factoryCodeHash": "0xbab145d02e7005f0d84c6c1639d39b799b0ea16df99ebbdaf5a14d9da820b4e0",
+    "initCodeHash": "0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f",
+    "feeNumerator": 997,
+    "salt": "keccak256(abi.encodePacked(token0, token1))"
+  },
+  "cl": [
+    {
+      "index": 0,
+      "family": "Ramses V3 (RamsesV3Factory + RamsesV3PoolDeployer)",
+      "factory": "0xe0c4ceb92d08ca985bb70fe0a22feb121a9854a8",
+      "deployer": "0x4b37359bf291abe8453692db58d515a8b013dca9",
+      "initCode": "55-byte constant stub (calls caller.creationCodeLocation() = 0x5ef64a047d3ec31fb533758ef4dd2b559ab85875 and delegatecalls the pool creation code)",
+      "initCodeHash": "0x892f127ed4b26ca352056c8fb54585a3268f76f97fdd84d5836ef4bda8d8c685",
+      "salt": "keccak256(abi.encode(token0, token1, int24 tickSpacing))"
+    },
+    {
+      "index": 1,
+      "family": "Slipstream-type, EIP-1167 clone (pool swap hook 0xc0ed888afe87ed1acf01d9f19bb850159e3ce434)",
+      "factory": "0xc63d7338c178e805c544b8f897066bd3bbcbe136",
+      "deployer": "0xc63d7338c178e805c544b8f897066bd3bbcbe136",
+      "poolImplementation": "0x1642634c8cb1c9f1b84c9a1a08534f8c3f4e89f8",
+      "initCodeHash": "0x3e77b70b9c4ce644601ed4aab19834375c6a9a2bca7adeb89a7bdd5fd8eb0a7d",
+      "salt": "keccak256(abi.encode(token0, token1, int24 tickSpacing))"
+    },
+    {
+      "index": 2,
+      "family": "Slipstream-type, EIP-1167 clone",
+      "factory": "0x1ac9db4a2608ba45d6127b1737949b51bb54b7f3",
+      "deployer": "0x1ac9db4a2608ba45d6127b1737949b51bb54b7f3",
+      "poolImplementation": "0x11725976bf1f38c4ab78d1f480bc5883d70d9dc3",
+      "initCodeHash": "0x2a16e4a055eca1bf027a534adf1626e905f61a8fd28055bbcc8787c573c76e33",
+      "salt": "keccak256(abi.encode(token0, token1, int24 tickSpacing))"
+    },
+    {
+      "index": 3,
+      "family": "Slipstream-type, EIP-1167 clone",
+      "factory": "0x5481864ddd46a2d798df0925c23b7846e776e5e3",
+      "deployer": "0x5481864ddd46a2d798df0925c23b7846e776e5e3",
+      "poolImplementation": "0xb6bb28604d0926f8cdd44bd5ecf38c15ad6f6ddf",
+      "initCodeHash": "0x6755479e7fc5517a003ad6c3467aac908acd527799d1b22d22fe61ff7f470fc0",
+      "salt": "keccak256(abi.encode(token0, token1, int24 tickSpacing))"
+    },
+    {
+      "index": 4,
+      "family": "Slipstream-type, EIP-1167 clone",
+      "factory": "0xaa5865dc3a60b25d305226d66fd573021f0d8ffb",
+      "deployer": "0xaa5865dc3a60b25d305226d66fd573021f0d8ffb",
+      "poolImplementation": "0x2daa7cf731334b4cd1c2e4e01e97ca67f4b9c6ae",
+      "initCodeHash": "0x8fc9aa80232b763bd70701e158188b66915cbbbcf908ccd947500767ef4dc7c1",
+      "salt": "keccak256(abi.encode(token0, token1, int24 tickSpacing))"
+    }
+  ],
+  "hooks": [
+    {
+      "address": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
+      "codeHash": "0xc21b1e6c1b45403e81a581f22ed6d9c747997af1cfdac1b1dc9f4b1d346a10db",
+      "source": "K-7 reviewed (router profile hookReviewedAllowlist)"
+    },
+    {
+      "address": "0x4e3468951d49f2eea976ed0d6e75ffcb44a9a544",
+      "codeHash": "0xc41a91106002f15bf70ae266824317f3f3ac638ac72ca5253bae395fa47ee631",
+      "source": "K-7 reviewed, doppler-initializer"
+    },
+    {
+      "address": "0x48b8f6ad3a1b4aa477314c9a23035b8f84dde8cc",
+      "codeHash": "0x0883056c4856f8fe464ff49f9c1c028455459dad8ceddcc6d5159259fe51e07f",
+      "source": "K-7 reviewed, clanker-static-v2"
+    },
+    {
+      "address": "0x75a54357d9c78a2db19004a5fdc76c50f9242aec",
+      "codeHash": "0x5bbb7cb03abf34683d1f1e795e5e1a96573a0feee7c20c51f1cbf02139eb9003",
+      "source": "K-7 reviewed (router profile hookReviewedAllowlist)"
+    }
+  ]
+}

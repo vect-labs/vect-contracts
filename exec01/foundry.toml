@@ -1,0 +1,39 @@
+# EXEC-01 E3: Vect swap executor. Fork tests only; nothing is deployed from this project.
+[profile.default]
+src = "src"
+test = "test"
+script = "script"
+out = "out"
+cache_path = "cache"
+libs = ["lib"]
+solc_version = "0.8.38"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
+bytecode_hash = "none"
+cbor_metadata = false
+auto_detect_solc = false
+ffi = false
+fs_permissions = [{ access = "read", path = "./" }]
+remappings = ["forge-std/=lib/forge-std/src/"]
+gas_limit = 1073741824
+# Fork RPC: set ROBINHOOD_RPC to an archive-capable Robinhood Chain (4663) endpoint.
+[rpc_endpoints]
+robinhood = "${ROBINHOOD_RPC}"
+
+[profile.default.fuzz]
+runs = 256
+seed = "0x4543304d5645435445"
+
+[profile.default.invariant]
+runs = 64
+depth = 64
+fail_on_revert = false
+
+[fmt]
+line_length = 120
+
+[lint]
+# Informational style lints of forge's linter are not part of the review; Slither and Aderyn are the static tools.
+exclude_lints = ["unsafe-typecast", "screaming-snake-case-const", "screaming-snake-case-immutable", "mixed-case-variable", "mixed-case-function", "asm-keccak256", "unwrapped-modifier-logic"]

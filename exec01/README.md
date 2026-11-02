@@ -9,7 +9,7 @@
 >
 > Nothing in this repository is an offer or a solicitation to buy or sell any crypto-asset or financial instrument, or investment advice.
 >
-> The code is provided under the MIT licence, "as is", without warranty of any kind. **VECT is a trademark of VECT LABS (French trademark no. 5315690); the licence grants no right to use the VECT name or logo.**
+> The code is provided under the MIT licence, "as is", without warranty of any kind. **VECT is a trademark of VECT LABS. This licence grants no right to use the VECT name or logo.**
 >
 > Security reports: security@vect.trade (see vect.trade/security).
 

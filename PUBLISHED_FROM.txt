@@ -1,2 +1,2 @@
 Published from VECT LABS' private repository at commit 0c6b88ee50af216fd27691b244b3c08f69b5e71e on 2026-11-02.
-Release: exec01-v1.0.0-rc1 (not deployed).
+Release: exec01-v1.0.0-rc2 (not deployed). rc2 removes the test-only contracts and corrects the trademark notice; the contract source is unchanged from rc1.

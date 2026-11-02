@@ -9,11 +9,15 @@
 
 The source of each contract is the same on every chain; only its deployment configuration differs. Each chain has its own folder under [`deployments/`](deployments/) with that configuration, the deployed address and its verified source.
 
-| Contract | Address | <a href="deployments/robinhood/"><img src="assets/chains/robinhood.jpg" width="26" height="26" alt="Robinhood Chain" title="Robinhood Chain"></a> | <a href="deployments/base/"><img src="assets/chains/base.png" width="26" height="26" alt="Base" title="Base"></a> | <a href="deployments/bnb/"><img src="assets/chains/bnb.png" width="26" height="26" alt="BNB Smart Chain" title="BNB Smart Chain"></a> | <a href="deployments/arbitrum/"><img src="assets/chains/arbitrum.png" width="26" height="26" alt="Arbitrum One" title="Arbitrum One"></a> | <a href="deployments/ethereum/"><img src="assets/chains/ethereum.png" width="26" height="26" alt="Ethereum" title="Ethereum"></a> |
+<div align="center">
+
+| Contract | Address | <a href="deployments/robinhood/"><img src="assets/chains/robinhood.jpg" width="26" height="26" alt="Robinhood Chain" title="Robinhood Chain" align="top"></a> | <a href="deployments/base/"><img src="assets/chains/base.png" width="26" height="26" alt="Base" title="Base" align="top"></a> | <a href="deployments/bnb/"><img src="assets/chains/bnb.png" width="26" height="26" alt="BNB Smart Chain" title="BNB Smart Chain" align="top"></a> | <a href="deployments/arbitrum/"><img src="assets/chains/arbitrum.png" width="26" height="26" alt="Arbitrum One" title="Arbitrum One" align="top"></a> | <a href="deployments/ethereum/"><img src="assets/chains/ethereum.png" width="26" height="26" alt="Ethereum" title="Ethereum" align="top"></a> |
 |:--|:--|:-:|:-:|:-:|:-:|:-:|
 | [`VectExecutor`](exec01/) | — | RC | — | — | — | — |
 
-✓ deployed · RC release candidate (not deployed) · — not deployed
+<sub>**✓** Deployed &emsp;&emsp; **RC** Release candidate (not deployed) &emsp;&emsp; **—** Not deployed</sub>
+
+</div>
 
 Only the addresses listed in this repository, in the table above and in [`deployments/<chain>/`](deployments/), are official VECT LABS contracts.
 
@@ -26,9 +30,9 @@ The source of every contract VECT LABS deploys, or intends to deploy, is publish
 - **Review:** internal review only, no external audit. Scope, methods and limits are in [`SECURITY-REVIEW.md`](SECURITY-REVIEW.md).
 - **Reporting a vulnerability:** write privately to **security@vect.trade**; see [`SECURITY.md`](SECURITY.md). No bug bounty is offered at this time.
 
-## Build and test
+## Build and verify
 
-The contracts are written in **Solidity 0.8.38** (EVM `cancun`, optimizer 200 runs, via IR). Building requires [Foundry](https://book.getfoundry.sh/); the fork suites also need an archive-capable Robinhood Chain RPC.
+The contracts are written in **Solidity 0.8.38** (EVM `cancun`, optimizer 200 runs, via IR). Every deployment is built with these settings, so its bytecode can be reproduced exactly and verified on [Sourcify](https://sourcify.dev) from its tagged source in this repository. Building requires [Foundry](https://book.getfoundry.sh/); the fork suites also need an archive-capable Robinhood Chain RPC.
 
 ```
 cd exec01

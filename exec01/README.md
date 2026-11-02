@@ -34,7 +34,7 @@ A stateless swap executor for Robinhood Chain (chain ID 4663). It executes, in o
   - `Fuzz.t.sol`, `Invariant.t.sol`, `InvariantQA.t.sol`: properties and handler-based invariants with hostile actors.
 - `lib/forge-std`: the vendored test dependency (forge-std v1.17.0, `src` only; MIT / Apache-2.0).
 
-## Build and test
+## Build and verify
 Toolchain: forge 1.8.7, solc 0.8.38, EVM `cancun`, optimizer 200 runs, via IR, no metadata hash.
 
 ```

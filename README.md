@@ -9,9 +9,15 @@
 
 The source of each contract is the same on every chain; only its deployment configuration differs. Each chain has its own folder under [`deployments/`](deployments/) with that configuration, the deployed address and its verified source.
 
-| Contract | Deployed | Not deployed |
-|---|---|---|
-| [`VectExecutor`](exec01/) | — | <a href="deployments/robinhood/"><img src="assets/chains/robinhood.jpg" width="22" height="22" alt="Robinhood Chain" title="Robinhood Chain (release candidate)"></a> <a href="deployments/base/"><img src="assets/chains/base.png" width="22" height="22" alt="Base" title="Base"></a> <a href="deployments/bnb/"><img src="assets/chains/bnb.png" width="22" height="22" alt="BNB Smart Chain" title="BNB Smart Chain"></a> <a href="deployments/arbitrum/"><img src="assets/chains/arbitrum.png" width="22" height="22" alt="Arbitrum One" title="Arbitrum One"></a> <a href="deployments/ethereum/"><img src="assets/chains/ethereum.png" width="22" height="22" alt="Ethereum" title="Ethereum"></a> |
+<table>
+  <tr><th></th><th align="left">Chain</th><th align="left">Status</th><th align="left">Address</th></tr>
+  <tr><td colspan="4"><a href="exec01/"><b><code>VectExecutor</code></b></a></td></tr>
+  <tr><td><img src="assets/chains/robinhood.jpg" width="20" height="20" alt="Robinhood Chain"></td><td><a href="deployments/robinhood/">Robinhood Chain</a></td><td>Release candidate</td><td>—</td></tr>
+  <tr><td><img src="assets/chains/base.png" width="20" height="20" alt="Base"></td><td><a href="deployments/base/">Base</a></td><td>Not deployed</td><td>—</td></tr>
+  <tr><td><img src="assets/chains/bnb.png" width="20" height="20" alt="BNB Smart Chain"></td><td><a href="deployments/bnb/">BNB Smart Chain</a></td><td>Not deployed</td><td>—</td></tr>
+  <tr><td><img src="assets/chains/arbitrum.png" width="20" height="20" alt="Arbitrum One"></td><td><a href="deployments/arbitrum/">Arbitrum One</a></td><td>Not deployed</td><td>—</td></tr>
+  <tr><td><img src="assets/chains/ethereum.png" width="20" height="20" alt="Ethereum"></td><td><a href="deployments/ethereum/">Ethereum</a></td><td>Not deployed</td><td>—</td></tr>
+</table>
 
 Only the addresses listed in [`deployments/<chain>/`](deployments/) are official VECT LABS contracts.
 

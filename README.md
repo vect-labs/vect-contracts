@@ -9,17 +9,13 @@
 
 The source of each contract is the same on every chain; only its deployment configuration differs. Each chain has its own folder under [`deployments/`](deployments/) with that configuration, the deployed address and its verified source.
 
-<table>
-  <tr><th></th><th align="left">Chain</th><th align="left">Status</th><th align="left">Address</th></tr>
-  <tr><td colspan="4"><a href="exec01/"><b><code>VectExecutor</code></b></a></td></tr>
-  <tr><td><img src="assets/chains/robinhood.jpg" width="20" height="20" alt="Robinhood Chain"></td><td><a href="deployments/robinhood/">Robinhood Chain</a></td><td>Release candidate</td><td>—</td></tr>
-  <tr><td><img src="assets/chains/base.png" width="20" height="20" alt="Base"></td><td><a href="deployments/base/">Base</a></td><td>Not deployed</td><td>—</td></tr>
-  <tr><td><img src="assets/chains/bnb.png" width="20" height="20" alt="BNB Smart Chain"></td><td><a href="deployments/bnb/">BNB Smart Chain</a></td><td>Not deployed</td><td>—</td></tr>
-  <tr><td><img src="assets/chains/arbitrum.png" width="20" height="20" alt="Arbitrum One"></td><td><a href="deployments/arbitrum/">Arbitrum One</a></td><td>Not deployed</td><td>—</td></tr>
-  <tr><td><img src="assets/chains/ethereum.png" width="20" height="20" alt="Ethereum"></td><td><a href="deployments/ethereum/">Ethereum</a></td><td>Not deployed</td><td>—</td></tr>
-</table>
+| Contract | Address | <a href="deployments/robinhood/"><img src="assets/chains/robinhood.jpg" width="26" height="26" alt="Robinhood Chain" title="Robinhood Chain"></a> | <a href="deployments/base/"><img src="assets/chains/base.png" width="26" height="26" alt="Base" title="Base"></a> | <a href="deployments/bnb/"><img src="assets/chains/bnb.png" width="26" height="26" alt="BNB Smart Chain" title="BNB Smart Chain"></a> | <a href="deployments/arbitrum/"><img src="assets/chains/arbitrum.png" width="26" height="26" alt="Arbitrum One" title="Arbitrum One"></a> | <a href="deployments/ethereum/"><img src="assets/chains/ethereum.png" width="26" height="26" alt="Ethereum" title="Ethereum"></a> |
+|:--|:--|:-:|:-:|:-:|:-:|:-:|
+| [`VectExecutor`](exec01/) | — | RC | — | — | — | — |
 
-Only the addresses listed in [`deployments/<chain>/`](deployments/) are official VECT LABS contracts.
+✓ deployed · RC release candidate (not deployed) · — not deployed
+
+Only the addresses listed in this repository, in the table above and in [`deployments/<chain>/`](deployments/), are official VECT LABS contracts.
 
 `VectExecutor` is a stateless swap executor. When a user submits a signed swap, it routes the user's tokens across Uniswap v2, v3 and v4 pools and concentrated-liquidity fork factories in one transaction. It has no owner, no admin, no upgrade and no pause, and it holds no funds between transactions. Status everywhere: internally reviewed, not audited by an external firm. Details: [`exec01/README.md`](exec01/README.md).
 

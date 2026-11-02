@@ -15,7 +15,7 @@ The source of each contract is the same on every chain; only its deployment conf
 |:--|:--|:-:|:-:|:-:|:-:|:-:|
 | [`VectExecutor`](exec01/) | — | RC | — | — | — | — |
 
-<sub>**✓** Deployed &emsp;&emsp; **RC** Release candidate (not deployed) &emsp;&emsp; **—** Not deployed</sub>
+<sup>**✓** Deployed &emsp;&emsp; **RC** Release candidate (not deployed) &emsp;&emsp; **—** Not deployed</sup>
 
 </div>
 

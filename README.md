@@ -11,7 +11,7 @@ The source of each contract is the same on every chain; only its deployment conf
 
 <div align="center">
 
-| Contract | Address | <a href="deployments/robinhood/"><img src="assets/chains/robinhood.jpg" width="26" height="26" alt="Robinhood Chain" title="Robinhood Chain" align="top"></a> | <a href="deployments/base/"><img src="assets/chains/base.png" width="26" height="26" alt="Base" title="Base" align="top"></a> | <a href="deployments/bnb/"><img src="assets/chains/bnb.png" width="26" height="26" alt="BNB Smart Chain" title="BNB Smart Chain" align="top"></a> | <a href="deployments/arbitrum/"><img src="assets/chains/arbitrum.png" width="26" height="26" alt="Arbitrum One" title="Arbitrum One" align="top"></a> | <a href="deployments/ethereum/"><img src="assets/chains/ethereum.png" width="26" height="26" alt="Ethereum" title="Ethereum" align="top"></a> |
+| Contract | Address | <a href="deployments/robinhood/"><img src="assets/chains/robinhood.jpg" width="26" height="26" alt="Robinhood Chain" title="Robinhood Chain" align="top"></a> | <a href="deployments/base/"><img src="assets/chains/base.svg" width="26" height="26" alt="Base" title="Base" align="top"></a> | <a href="deployments/bnb/"><img src="assets/chains/bnb.png" width="26" height="26" alt="BNB Smart Chain" title="BNB Smart Chain" align="top"></a> | <a href="deployments/arbitrum/"><img src="assets/chains/arbitrum.png" width="26" height="26" alt="Arbitrum One" title="Arbitrum One" align="top"></a> | <a href="deployments/ethereum/"><img src="assets/chains/ethereum.png" width="26" height="26" alt="Ethereum" title="Ethereum" align="top"></a> |
 |:--|:--|:-:|:-:|:-:|:-:|:-:|
 | [`VectExecutor`](exec01/) | — | RC | — | — | — | — |
 
